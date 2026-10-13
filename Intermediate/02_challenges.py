@@ -13,13 +13,13 @@ cada impresión), sustituyendo los siguientes:
 def fizzbuzz():
     for num in range(1, 21):
         if num % 3 == 0 and num % 5 == 0:
-            print("fizzbuzz")
+            print("fizzbuzz") # -> fizzbuzz (si es múltiplo de 3 y 5, ej. 15)
         elif num % 3 == 0:
-            print("fizz")
+            print("fizz") # -> fizz (si es múltiplo de 3, ej. 3, 6, 9, 12, 18)
         elif num % 5 == 0:
-            print("buzz")
+            print("buzz") # -> buzz (si es múltiplo de 5, ej. 5, 10, 20)
         else:
-            print(num)
+            print(num) # -> Imprime el número (1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19)
 
 fizzbuzz()
 
@@ -38,7 +38,7 @@ def is_anagram(word_one, word_two):
         return False
     return sorted(word_one.lower()) == sorted(word_two.lower())
 
-print(is_anagram("Roma", "Mora"))
+print(is_anagram("Roma", "Mora")) # -> True
 
 
 """
@@ -53,7 +53,7 @@ def fibonacci():
     prev = 0
     next = 1
     for _ in range(0, 11):
-        print(prev)
+        print(prev) # -> Imprime sucesivamente: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 
         fib = prev + next
         prev = next
@@ -77,7 +77,7 @@ def is_prime():
                     is_divisible = True
                     break
             if not is_divisible:
-                print(number)
+                print(number) # -> Imprime sucesivamente: 2, 3, 5, 7, 11, 13, 17, 19
 
 is_prime()
 
@@ -95,4 +95,4 @@ def reverse(text):
         reversed_text += text[text_len - index - 1]
     return reversed_text
 
-print(reverse("Hola mundo"))
+print(reverse("Hola mundo")) # -> odnum aloH

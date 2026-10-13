@@ -4,11 +4,11 @@
 
 # Nombre función = 'lambda' argumento : expresiones (return)
 sum_two_values = lambda ft_value, sd_value: ft_value + sd_value
-print(sum_two_values(3, 4))
+print(sum_two_values(3, 4)) # -> 7
 
 multiply_values = lambda ft_value, sd_value: ft_value * sd_value - 3
-print(multiply_values(2, 4))
+print(multiply_values(2, 4)) # -> 5
 
 def sum_three_values(value):
     return lambda ft_value, sd_value: ft_value + sd_value + value
-print(sum_three_values(6)(3, 4))
+print(sum_three_values(6)(3, 4)) # -> 13
